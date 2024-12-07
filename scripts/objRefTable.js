@@ -49,7 +49,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Cnds.OnFall,
 		C3.Plugins.Sprite.Acts.SetX,
 		C3.Plugins.Sprite.Exps.X,
-		C3.ScriptsInEvents["Event-Blatt1_Event25"],
 		C3.Behaviors.Platform.Cnds.IsByWall,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Acts.SetFlipped,
@@ -132,6 +131,7 @@ self.C3_JsPropNameTable = [
 	{STEINSPAWNER: 0},
 	{Sprite17: 0},
 	{Text7: 0},
+	{Text8: 0},
 	{Munition: 0}
 ];
 
@@ -181,5 +181,6 @@ self.InstanceType = {
 	Sprite16: class extends self.ISpriteInstance {},
 	STEINSPAWNER: class extends self.ISpriteInstance {},
 	Sprite17: class extends self.ISpriteInstance {},
-	Text7: class extends self.ITextInstance {}
+	Text7: class extends self.ITextInstance {},
+	Text8: class extends self.ITextInstance {}
 }

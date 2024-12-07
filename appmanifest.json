@@ -1,40 +1,15 @@
 {
-	"name": "Neues Projekt",
-	"short_name": "Neues Projekt",
+	"name": "Dawn of Krokette - Flucht aus der Pommes Hölle",
+	"short_name": "Dawn of Krokette - Flucht aus der Pommes Hölle",
 	"description": "",
 	"start_url": "index.html",
 	"display": "fullscreen",
-	"orientation": "any",
+	"orientation": "landscape",
 	"background_color": "#ffffff",
 	"icons": [
 		{
 			"src": "icons/Symbol-16.png",
-			"sizes": "16x16",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/Symbol-32.png",
 			"sizes": "32x32",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/Symbol-64.png",
-			"sizes": "64x64",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/Symbol-128.png",
-			"sizes": "128x128",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/Symbol-256.png",
-			"sizes": "256x256",
-			"type": "image/png"
-		},
-		{
-			"src": "icons/Symbol-512.png",
-			"sizes": "512x512",
 			"type": "image/png"
 		}
 	],
