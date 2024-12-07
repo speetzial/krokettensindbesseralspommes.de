@@ -46,6 +46,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Physics.Acts.SetEnabled,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.Sprite.Acts.SetCollisions,
+		C3.Behaviors.Platform.Cnds.OnFall,
+		C3.Plugins.Sprite.Acts.SetX,
+		C3.Plugins.Sprite.Exps.X,
+		C3.ScriptsInEvents["Event-Blatt1_Event25"],
 		C3.Behaviors.Platform.Cnds.IsByWall,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Plugins.Sprite.Acts.SetFlipped,
@@ -58,7 +62,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Acts.SetDefaultControls,
 		C3.Behaviors.Platform.Cnds.IsOnFloor,
 		C3.Behaviors.Platform.Cnds.OnJump,
-		C3.Behaviors.Platform.Cnds.OnFall,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.Mouse.Cnds.OnClick,
@@ -125,6 +128,10 @@ self.C3_JsPropNameTable = [
 	{Maus: 0},
 	{Text6: 0},
 	{Audio: 0},
+	{Sprite16: 0},
+	{STEINSPAWNER: 0},
+	{Sprite17: 0},
+	{Text7: 0},
 	{Munition: 0}
 ];
 
@@ -170,5 +177,9 @@ self.InstanceType = {
 	Sprite15: class extends self.ISpriteInstance {},
 	Maus: class extends self.IInstance {},
 	Text6: class extends self.ITextInstance {},
-	Audio: class extends self.IInstance {}
+	Audio: class extends self.IInstance {},
+	Sprite16: class extends self.ISpriteInstance {},
+	STEINSPAWNER: class extends self.ISpriteInstance {},
+	Sprite17: class extends self.ISpriteInstance {},
+	Text7: class extends self.ITextInstance {}
 }

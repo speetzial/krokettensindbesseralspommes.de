@@ -1478,6 +1478,12 @@ self.C3_ExpressionFuncs = [
 		() => 0.012,
 		() => "FALLEN",
 		() => "AKTIV",
+		() => "FALL",
+		() => "LANDING",
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() + 20);
+		},
 		() => "KUGEL",
 		() => "Gegner",
 		() => "HURT",
