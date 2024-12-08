@@ -21,6 +21,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Sprite.Acts.Spawn,
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.Sprite.Acts.Destroy,
@@ -55,16 +56,20 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Behaviors.LOS.Cnds.HasLOSToObject,
 		C3.Behaviors.Platform.Cnds.OnMove,
+		C3.Plugins.Audio.Acts.StopAll,
 		C3.Behaviors.scrollto.Acts.SetEnabled,
 		C3.Plugins.System.Acts.Scroll,
 		C3.Plugins.Sprite.Acts.SetPos,
+		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Behaviors.Platform.Acts.SetDefaultControls,
+		C3.Plugins.System.Acts.SetBoolVar,
+		C3.Plugins.System.Acts.GoToLayout,
 		C3.Behaviors.Platform.Cnds.IsOnFloor,
 		C3.Behaviors.Platform.Cnds.OnJump,
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.System.Acts.RestartLayout,
-		C3.Plugins.Mouse.Cnds.OnClick,
-		C3.Plugins.System.Acts.GoToLayout
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Mouse.Cnds.OnClick
 	];
 };
 self.C3_JsPropNameTable = [
@@ -105,7 +110,7 @@ self.C3_JsPropNameTable = [
 	{Sichtlinie: 0},
 	{Sprite7: 0},
 	{Sprite8: 0},
-	{Sprite9: 0},
+	{BOSSSTARTER: 0},
 	{Fortschrittsanzeige2: 0},
 	{Sprite10: 0},
 	{Sprite11: 0},
@@ -132,6 +137,8 @@ self.C3_JsPropNameTable = [
 	{Sprite17: 0},
 	{Text7: 0},
 	{Text8: 0},
+	{MODSOUNDAUSLÖSER: 0},
+	{Gewonnen: 0},
 	{Munition: 0}
 ];
 
@@ -156,7 +163,7 @@ self.InstanceType = {
 	Sprite6: class extends self.ISpriteInstance {},
 	Sprite7: class extends self.ISpriteInstance {},
 	Sprite8: class extends self.ISpriteInstance {},
-	Sprite9: class extends self.ISpriteInstance {},
+	BOSSSTARTER: class extends self.ISpriteInstance {},
 	Fortschrittsanzeige2: class extends self.IProgressBarInstance {},
 	Sprite10: class extends self.ISpriteInstance {},
 	Sprite11: class extends self.ISpriteInstance {},
@@ -182,5 +189,6 @@ self.InstanceType = {
 	STEINSPAWNER: class extends self.ISpriteInstance {},
 	Sprite17: class extends self.ISpriteInstance {},
 	Text7: class extends self.ITextInstance {},
-	Text8: class extends self.ITextInstance {}
+	Text8: class extends self.ITextInstance {},
+	MODSOUNDAUSLÖSER: class extends self.ISpriteInstance {}
 }
