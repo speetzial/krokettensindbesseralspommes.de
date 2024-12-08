@@ -18,6 +18,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text,
 		C3.Plugins.Mouse,
 		C3.Plugins.Audio,
+		C3.Plugins.Touch,
 		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
@@ -138,6 +139,7 @@ self.C3_JsPropNameTable = [
 	{Text7: 0},
 	{Text8: 0},
 	{MODSOUNDAUSLÖSER: 0},
+	{Touch: 0},
 	{Gewonnen: 0},
 	{Munition: 0}
 ];
@@ -190,5 +192,6 @@ self.InstanceType = {
 	Sprite17: class extends self.ISpriteInstance {},
 	Text7: class extends self.ITextInstance {},
 	Text8: class extends self.ITextInstance {},
-	MODSOUNDAUSLÖSER: class extends self.ISpriteInstance {}
+	MODSOUNDAUSLÖSER: class extends self.ISpriteInstance {},
+	Touch: class extends self.IInstance {}
 }
