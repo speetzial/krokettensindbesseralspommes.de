@@ -46,6 +46,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.OnCollision,
 		C3.Plugins.System.Acts.AddVar,
 		C3.Behaviors.Physics.Acts.SetEnabled,
+		C3.Plugins.System.Acts.SubVar,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.Sprite.Acts.SetCollisions,
 		C3.Behaviors.Platform.Cnds.OnFall,
@@ -70,6 +71,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Mouse.Cnds.OnClick
 	];
 };
@@ -108,6 +110,7 @@ self.C3_JsPropNameTable = [
 	{Sprite6: 0},
 	{WALK: 0},
 	{AKTIV: 0},
+	{RUNNING: 0},
 	{Sichtlinie: 0},
 	{Sprite7: 0},
 	{Sprite8: 0},
@@ -140,6 +143,7 @@ self.C3_JsPropNameTable = [
 	{Text8: 0},
 	{MODSOUNDAUSLÖSER: 0},
 	{Touch: 0},
+	{Fallgeschw: 0},
 	{Gewonnen: 0},
 	{Munition: 0}
 ];

@@ -1487,6 +1487,10 @@ self.C3_ExpressionFuncs = [
 		() => "ErsetzeFarbe",
 		() => 0.2,
 		() => -10,
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => v0.GetValue();
+		},
 		() => 0.012,
 		() => "FALLEN",
 		() => "AKTIV",
@@ -1515,9 +1519,8 @@ self.C3_ExpressionFuncs = [
 		() => 70,
 		() => "FEUER",
 		() => 2,
-		() => -5,
-		() => 7,
 		() => 5,
+		() => -5,
 		() => -20
 ];
 
